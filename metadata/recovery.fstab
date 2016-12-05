@@ -6,3 +6,6 @@
 /misc	emmc	/dev/block/bootdevice/by-name/misc
 		
 /firmware	ext4	/dev/block/bootdevice/by-name/modem
+
+/external_sd	auto	/dev/block/mmcblk1p1
+/sd-ext	auto	/dev/block/mmcblk1p2
