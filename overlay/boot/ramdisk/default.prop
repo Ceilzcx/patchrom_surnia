@@ -16,7 +16,7 @@ debug.atrace.tags.enableflags=0
 #
 # BOOTIMAGE_BUILD_PROPERTIES
 #
-ro.bootimage.build.date=Sáb Nov 5 19:35:12 BRST 2016
-ro.bootimage.build.date.utc=1478381712
-ro.bootimage.build.fingerprint=motorola/cm_condor/condor:6.0.1/MOB30Z/d38558e2d0:userdebug/test-keys
+ro.bootimage.build.date=Mon Nov 21 20:46:37 PST 2016
+ro.build.date.utc=1479789997
+ro.build.fingerprint=motorola/surnia:6.0.1/MOB31K/7b2464c573:userdebug/test-keys
 persist.sys.usb.config=mtp,adb
