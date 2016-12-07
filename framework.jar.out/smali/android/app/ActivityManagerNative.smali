@@ -8816,15 +8816,13 @@
     invoke-virtual {v0, v6}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
     .line 1623
-    sget-object v6, Landroid/content/pm/ApplicationInfo;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object v6, Landroid/text/TextUtils;->CHAR_SEQUENCE_CREATOR:Landroid/os/Parcelable$Creator;
 
     move-object/from16 v0, p2
 
     invoke-interface {v6, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
-    move-result-object v151
-
-    check-cast v151, Landroid/content/pm/ApplicationInfo;
+    move-result-object v152
 
     .line 1624
     .local v151, "info":Landroid/content/pm/ApplicationInfo;
@@ -10192,20 +10190,15 @@
     move-result v17
 
     .restart local v17    # "userId":I
-    move-object/from16 v144, p0
+    move-object/from16 v0, p0
 
-    move-object/from16 v145, v7
+    move-object/from16 v1, v152
 
-    move-object/from16 v146, v8
+    move/from16 v1, v152
 
-    move-object/from16 v149, v11
+    move/from16 v2, v154
 
-    move-object/from16 v150, v16
-
-    move/from16 v151, v17
-
-    .line 1874
-    invoke-virtual/range {v144 .. v151}, Landroid/app/ActivityManagerNative;->startActivities(Landroid/app/IApplicationThread;Ljava/lang/String;[Landroid/content/Intent;[Ljava/lang/String;Landroid/os/IBinder;Landroid/os/Bundle;I)I
+    invoke-virtual {v0, v1, v2}, Landroid/app/ActivityManagerNative;->showBootMessage(Ljava/lang/CharSequence;Z)V 
 
     move-result v0
 
